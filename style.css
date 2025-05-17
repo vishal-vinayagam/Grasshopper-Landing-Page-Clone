@@ -1,0 +1,394 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      font-size: 17px;
+      color: #2c2a2ab8;
+    }
+    a {
+  text-decoration: none;
+}
+   .first{
+    background-color: #45c14e;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+   }
+   .first p{
+    text-align: center;
+    color: #fcfcfc;
+   }
+    header {
+      background: #fcfcfc;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #2c2a2a9e;
+    }
+/*hero section*/
+
+.hero {
+  position: relative;
+  background-color: #fcfcfc;
+  padding: 5rem 3rem;
+  padding-bottom: 0px;        
+  overflow: hidden;
+  min-height: 1100px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 106%;           
+  height: 100%;           
+  object-fit: contain;
+  transform: translateX(-5%); 
+ 
+  z-index: 1;
+}
+
+.hero h1,
+.hero p,
+.hero button {
+  position: relative;
+  z-index: 2;
+  margin-left: 150px;
+}
+.hero button{
+    
+  background: #45c14e;
+  border: none;
+  padding: 1.3rem 2.5rem;
+  color: white;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+}
+
+.hero h1 {
+  font-size: 2.5rem;  
+  font-weight: 700;   
+  line-height: 1.3; 
+  
+  color: #2c2a2a9e; 
+}
+.hero p {
+  font-size: 1.2rem;   
+  font-weight: 400;    
+  margin-bottom: 1.5rem;
+  color: #2c2a2a9e;
+}
+
+
+/*Feature section*/
+
+    .features {
+      padding: 1rem 2rem;
+      padding-bottom: 50px;
+      text-align: center;
+      font-size: 25px;
+      background: #eafff9;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .round{
+        width: 135%;
+        height: 65%;
+    }
+    .features p{
+      margin-bottom: 2rem;
+      margin-left: 3rem;
+      font-size: 20px;
+      font-weight: 20px;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media(min-width: 768px) {
+      .feature-list {
+        flex-direction: row;
+        gap: 12rem;
+        margin-left: 3rem;
+      }
+    }
+
+    .feature {
+      flex: 1;
+      max-width: 300px;
+    }
+
+
+/* Testimonials */
+.testimonials {
+  padding: 80px 0;
+  background-color: rgba(244, 237, 243, 0.258);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.customer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--secondary-color);
+}
+
+.testimonial-content p {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-content h4 {
+  font-size: 1.6rem;
+  margin-top: 50px;
+  margin-right: 90px;
+  margin-bottom: 5px;
+}
+
+.testimonial-content span {
+  color: var(--gray-color);
+  font-size: 0.9rem;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.slider-controls button {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: var(--secondary-color);
+}
+/*learn*/
+.learn-anywhere {
+  background-color: #4ee8e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  gap: 40px;
+}
+
+.learn-anywhere img {
+  max-width: 330px;
+  margin-right: 90px;
+  height: auto;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.content h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #002c43;
+}
+
+.content p {
+  font-size: 15px;
+  color: #002c43;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.icons i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #000;
+}
+
+/*full image*/
+.full-projects {
+  position: relative;
+  width: 100%;
+  height: 120vh; 
+  overflow: hidden;
+}
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+
+.text-slider-2 {
+  position: absolute;
+  top: 48%;
+  left: 30%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #003366;
+  width: 80%;
+  z-index: 1;
+}
+
+.slides-2 p {
+  display: none;
+  font-size: 30px;
+  font-weight: 20px;
+  color: #00314d;
+  text-shadow: 1px 1px 2px black;
+}
+
+.slides-2 p.active {
+  display: block;
+}
+
+.dots-2 {
+  margin-top: 20px;
+}
+
+.dot-2 {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot-2.active {
+  background-color: #003366;
+}
+
+
+/**/
+    .stories, .learn-anywhere, .full-projects, .concepts, .get-started {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+/*end*/
+
+.get-started {
+  background-color: #4ee8e2;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  position: relative;
+}
+
+.get-started h2 {
+  flex: 1 1 100%;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.get-started button {
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  margin: 0 auto 10px auto; 
+  display: block;          
+  background-color: #45c14e;
+}
+
+
+.get-started div {
+  margin-top: 10px;
+}
+
+.get-started img.grasshopper-logo {
+  max-width: 300px;
+  height: auto;
+  margin-right: 30px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+/**/
+    .footer {
+      background: #01272f;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .footer a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
